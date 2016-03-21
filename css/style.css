@@ -1,0 +1,122 @@
+body { 
+	font-family: 'Arial', sans-serif;
+}
+section {
+ 	padding: 40px; 
+ 	border-top: 2px solid #ccc; 
+}
+ul li {
+ 	list-style-type: none; 
+ 	margin: 10px 0; 
+}
+ul {
+	padding: 0; 
+}
+h1 {
+	margin-top: 5px; 
+	font-size: 38px; 
+}
+h2 { 
+	margin-top: 5px;
+}
+.container { 
+	border: 2px solid #333; 
+	padding: 0px; 
+	width: 700px; 
+	height: 550px; 
+	margin: 0px auto; 
+	margin-top: 40px; 
+}
+.hidden { 
+	display: none; 
+}
+.show { 
+	display: block; 
+}
+.error {
+	color: red; 
+	border: 1px solid red;
+}
+#face { 
+	padding-top: 10px; 
+	border-right: 2px solid #ccc; 
+	display: inline-block; 
+	text-align: center; 
+	vertical-align: top; 
+	height: 100px; 
+	box-sizing: border-box; 
+}
+#face img { 
+	width: 45%; 
+}
+#banner { 
+	padding: 0px; 
+	border: none; 
+	display: inline-block; 
+	text-align: center; 
+	vertical-align: top; 
+	height: 100px; 
+	box-sizing: border-box; 
+}
+#banner img { 
+	width: 30%; 
+}
+.header_logo { 
+	width: 25%; 
+	display: inline-block; 
+}
+.header_title { 
+	width: 74%; 
+	display: inline-block; 
+}
+#wordSelect { 
+	position: relative; 
+}
+.grid_container { 
+	width: 100%; 
+	margin: 0; 
+	text-align: center; 
+}
+.grid_column { 
+	width: 32%; 
+	display: inline-block; 
+}
+.word_select_button, .madlib_button { 
+	position: absolute; 
+	right: 4.5em; 
+	margin-top: 1em; 
+}
+#start_over {
+	right: 45.5em; 
+	margin-top: 4em;
+}
+.slide.ng-hide-add, .slide.ng-hide-remove { 
+	transition: 0.5s linear all;
+}
+.slide {
+	opacity: 1;
+}
+.slide-ng-hide {
+	opacity: 0;
+}
+#madLibsStory { 
+	padding: 10px 40px; 
+}
+#madLibsStory p { 
+	padding: 0px; 
+	line-height: 45px; 
+	letter-spacing: 0.02em; 
+}
+#madLibsStory span { 
+	border-bottom: 1px solid #000; 
+	min-width: 100px; 
+	background-color: #eee; 
+	display: inline-block; 
+	height: 25px; 
+	padding-bottom: 5px; 
+	vertical-align: middle; 
+	text-align: center; 
+	line-height: 30px; 
+	padding-left: 5px; 
+	padding-right: 5px; 
+}
