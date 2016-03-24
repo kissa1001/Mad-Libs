@@ -3,7 +3,9 @@ body {
 }
 section {
  	padding: 40px; 
- 	border-top: 2px solid #ccc; 
+}
+header{
+	border-bottom: 1px solid #ccc;
 }
 ul li {
  	list-style-type: none; 
