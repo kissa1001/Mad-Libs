@@ -6,6 +6,7 @@ section {
 }
 header{
 	border-bottom: 1px solid #ccc;
+	height: 150px;
 }
 ul li {
  	list-style-type: none; 

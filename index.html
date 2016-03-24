@@ -31,34 +31,34 @@
 					<div class="grid_column">
 						<ul>
 							<li>Male: <input type="radio" ng-model="gender" ng-change="changeMale()" value="Male Name"> Female: <input type="radio" ng-model="gender" ng-change="changeFemale()" value="Female Name"></li>
-							<li>Name: <input type="text" ng-model="name" placeholder="{{ gender }}" value="&nbsp;"></li>
-							<li>Job Title: <input type="text" ng-model="job_title" placeholder="Job Title" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
-							<li>Tedious Task: <input type="text" ng-model="tedious_task" placeholder="Tedious Task" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
+							<li>Name: <input type="text" class="form-control" ng-model="name" placeholder="{{ gender }}" value="&nbsp;"></li>
+							<li>Job Title: <input type="text" class="form-control" ng-model="job_title" placeholder="Job Title" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
+							<li>Tedious Task: <input type="text" class="form-control" ng-model="tedious_task" placeholder="Tedious Task" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
 						</ul>
 					</div><!-- grid_column -->
 					<div class="grid_column">
 						<ul>
-							<li>Dirty Task: <input type="text" ng-model="dirty_task" placeholder="Dirty Task" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
-							<li>Celebrity: <input type="text" ng-model="celebrity" placeholder="Celebrity" value="&nbsp;" ng-pattern="/[a-z]/"  required></li>
-							<li>Useless Skill: <input type="text" ng-model="useless_skill" placeholder="Useless Skill" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
+							<li>Dirty Task: <input type="text" class="form-control" ng-model="dirty_task" placeholder="Dirty Task" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
+							<li>Celebrity: <input type="text" class="form-control" ng-model="celebrity" placeholder="Celebrity" value="&nbsp;" ng-pattern="/[a-z]/"  required></li>
+							<li>Useless Skill: <input type="text" class="form-control" ng-model="useless_skill" placeholder="Useless Skill" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
 						</ul>
 					</div><!-- grid_column -->
 					<div class="grid_column">
 						<ul>
-							<li>Obnoxious Celebrity: <input type="text" ng-model="obnoxious_celebrity" placeholder="Obnoxious Celebrity" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
-							<li>Huge Number: <input type="number" ng-model="huge_number" placeholder="Huge Number" value="&nbsp;" required></li>
-							<li>Adjective: <input type="text" ng-model="adjective" placeholder="Adjective" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
+							<li>Obnoxious Celebrity: <input type="text" class="form-control" ng-model="obnoxious_celebrity" placeholder="Obnoxious Celebrity" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
+							<li>Huge Number: <input type="number" class="form-control" ng-model="huge_number" placeholder="Huge Number" value="&nbsp;" required></li>
+							<li>Adjective: <input type="text" class="form-control" ng-model="adjective" placeholder="Adjective" value="&nbsp;" ng-pattern="/[a-z]/" required></li>
 						</ul>
 					</div><!-- grid_column -->
 				</div><!-- grid_container -->
-				<button class="word_select_button" ng-click="submit(); bool=true">Generate My Mad Lib</button>
+				<button class="btn btn-success word_select_button" ng-click="submit(); bool=true">Generate My Mad Lib</button>
 			</form>
 		</section> <!-- Word Select -->
 		<section id="madLibsStory" class="{{ madlibs_ui }} slide" ng-show="bool">
 			<p><span>{{ name }}</span> was a <span>{{ job_title }}</span> who loved technology. Although {{ pronoun }} loved parts of {{ possess_pronoun }} job, she absolutely hated  <span>{{ tedious_task }}</span> and <span>{{ dirty_task }}</span>. So, <span>{{ name }}</span> met with {{ possess_pronoun }} life mentor <span>{{ celebrity }}</span> who told {{ possess_pronoun }} to learn how to <span>{{ useless_skill }}</span> with Thinkful. Thinkful didn't offer a course on <span>{{ useless_skill }}</span> so {{ pronoun }} studied programming instead.</p> 
 
 			<p>What a great decision! With {{ possess_pronoun }} new skills, <span>{{ name }}</span> built a(n) <span>{{ adjective }}</span> robot named <span>{{ obnoxious_celebrity }}</span> that not only loved <span>{{ dirty_task }}</span> but did it <span>{{ huge_number }}</span> times faster.</p>
-			<button id="start_over" class="madlib_button" ng-click="start_over(); bool=false">Start Over</button>
+			<button id="start_over" class="madlib_button btn btn-primary" ng-click="start_over(); bool=false">Start Over</button>
 		</section> <!-- madLibStory -->
 	</div><!-- container -->
 </body>
