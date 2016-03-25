@@ -19,10 +19,13 @@ var madLibs = angular.module('madLibs', ['ngAnimate']);
 
 		$scope.submit = function() {
 			$scope.words_ui = 'hidden';
+			$scope.bool = true;
 		};
 
 		$scope.start_over = function() {
+			$scope.bool = false;
 			$scope.words_ui = 'show';
+			document.getElementById("form").reset();
 		};
 });
 
